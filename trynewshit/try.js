@@ -1,3 +1,18 @@
+//1
+let a=5
+let b=6
+// let temp
+// temp=a
+// a=b
+// b=temp
+//1.2
+// a=[b,b=a][0]
+//1.3
+// a=a+b
+// b=a-b
+// a=a-b
+
+
 //4
 // let item=["t-shirt","sweater","pant","pullover","jacket","jean","suit","shoes"]
 // function cret(){ 
@@ -148,6 +163,9 @@ month=1
 // value=total*2
 // console.log("I would get " + total + " * 2$ " + "= " + value + "$")
 
+//10
+//for
+//name[i]="<"+name[i]+">"
 
 
 //10.2
@@ -177,6 +195,16 @@ month=1
 //         odd.push(arr[i])
 //     }
 // }console.log(odd)
+
+//11.1.2
+// let result=[]
+// count=0
+// for(i=0;i<arr.length;i++){
+//     if(arr[i]%2!=0){
+
+//     }
+// }
+
 
 //11.2
 // let str=prompt("enter sequence of number, separated by a commas(,):")
