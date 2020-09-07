@@ -28,10 +28,9 @@ bt.addEventListener('click', function(){
 
 
 let ip=document.getElementById("my-input")
-ip.addEventListener('keypress', function(data){
-console.log(data.key)
-ul.insertAdjacentHTML('beforeend',`<li>${data.key}</li>`)
-})
+
+
+
 
 
 
