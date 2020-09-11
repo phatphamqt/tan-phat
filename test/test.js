@@ -117,4 +117,3 @@
 let input=prompt("nhap vao ngay thang nam cach nhau bang dau'/': ")
 let ninput=input.split("/")
 console.log(ninput)
-if(Date.getFullYear()==ninput[2] && month.getFullYear)
