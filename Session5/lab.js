@@ -42,6 +42,7 @@ let phone =
         let step2=prompt("Wellcome to our store! Please enter a number as below! \n 1.Buy a product \n 2.Support \n 3.Cancel")
         if(step2==1){
 
+<<<<<<< HEAD
             
          
             for(let i=0;i<phone.length;i++){
@@ -130,3 +131,6 @@ let phone =
 
        
      
+=======
+//MINH xin chao
+>>>>>>> 6dfb1dc97d83d081bc6cf8c1783ee2e84b1b23d1
