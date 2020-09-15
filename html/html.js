@@ -29,8 +29,17 @@ bt.addEventListener('click', function(){
 
 let ip=document.getElementById("my-input")
 
+let newplayer=[]
+ip.addEventListener('keypress', function(data){
+    console.log(data)
+    let enter=13
+    if(data.keyCode!=13){
+        newplayer.push(data.key)
+    }
+    else{
+        return ul.insertAdjacentHTML('beforeend',`<li>${newplayer.join("")}</li>`)
+    }
+})
 
-
-
-
+=
 
