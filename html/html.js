@@ -40,6 +40,38 @@ ip.addEventListener('keypress', function(data){
         return ul.insertAdjacentHTML('beforeend',`<li>${newplayer.join("")}</li>`)
     }
 })
+//8//9//10
+// let myfunction=function(name,wish){
+//     if(wish.length>0){
+//         alert("Your name is "+ name+"\n"+ "Your wish is to "+wish +" this year.")
+//     }
+    
+//     else if(wish.length==0){
+//         alert("Your name is "+ name+"\n"+"and you are helpless.")
+//     }
+// }
 
-=
+// let username=prompt("user's name: ")
+// let wishes=[]
+// for(i=1;i<4;i++){
+//     let wish=prompt("your wish: ")
+//     wishes.push(wish)
+// }
+// let rdwish=Math.floor(Math.random()*wishes.length)
+// myfunction(username,wishes[rdwish])
+
+
+
+//11
+
+let butt=document.getElementById("upperbttn")
+let name=document.getElementById("name")
+let res=document.getElementById("resultdiv")
+
+
+butt.addEventListener('click',function(){
+    res.innerHTML=name.value.toUpperCase()
+    console.log(name.value.toUpperCase())
+
+})
 
