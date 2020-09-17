@@ -2,20 +2,24 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
 }
+#head{
+    height: 150px;
+    
+}
 #logo{
     float: left;
     width: 15%;
     background-color: red;
-    height: 150px;
     text-align: center;
+    line-height: 150px;
     
 }
 #web{
     float: left;;
     width: 85%;
-    height: 150px;
     background-color: green;
     text-align: center;
+    line-height: 150px;
     
 }
 
@@ -25,12 +29,16 @@
     height: 50px;
     text-align: center;
     background-color: yellow;
+    line-height: 50px;
+}
+#section{
+    height: 150px;
 }
 .s{
     float: left;
     width: 33.33%;
     text-align: center;
-    height: 150px;
+    line-height: 150px;
 }
 #one{
     background-color: blue;
@@ -41,18 +49,23 @@
 #three{
     background-color: plum;
 }
+#body{
+    height: 700px;
+}
 #content{
     float: left;
     width: 90%;
     background-color: rgb(72, 255, 112);
-    height: 700px;
     text-align: center;
+    line-height: 700px;
 }
 #side{
     float: left;
     width: 10%;
     background-color: darkgoldenrod;
-    height: 700px;
+    text-align: center;
+    line-height: 700px;
+
 }
 #foot{
     float: left;

@@ -64,14 +64,36 @@ ip.addEventListener('keypress', function(data){
 
 //11
 
-let butt=document.getElementById("upperbttn")
-let name=document.getElementById("name")
-let res=document.getElementById("resultdiv")
+// let butt=document.getElementById("upperbttn")
+// let name=document.getElementById("name")
+// let res=document.getElementById("resultdiv")
 
+
+// butt.addEventListener('click',function(){
+//     res.innerHTML=name.value.toUpperCase()
+//     console.log(name.value.toUpperCase())
+
+// })
+
+
+let arr=["Backpack","Miband watch","Ring"]
+console.log(arr)
+
+let t=document.getElementById("test")
+console.log(t)
+
+for(i=0;i<arr.length;i++){
+    t.insertAdjacentHTML("beforeend",`<li>${arr[i]}<button class="re">remove</button</li>`)
+}
+let text=document.getElementById("txt")
+let butt=document.getElementById("add")
 
 butt.addEventListener('click',function(){
-    res.innerHTML=name.value.toUpperCase()
-    console.log(name.value.toUpperCase())
+    arr.push(text.value)
+        t.insertAdjacentHTML("beforeend",`<li>${arr[arr.length-1]}<button class="re">remove</button></li>`)
 
+        console.log(arr)
 })
+
+
 
