@@ -76,24 +76,38 @@ ip.addEventListener('keypress', function(data){
 // })
 
 
-let arr=["Backpack","Miband watch","Ring"]
-console.log(arr)
+let arr=["Back Pack","Miband Watch","Ring"]
 
-let t=document.getElementById("test")
-console.log(t)
 
-for(i=0;i<arr.length;i++){
-    t.insertAdjacentHTML("beforeend",`<li>${arr[i]}<button class="re">remove</button</li>`)
+    let t=document.getElementById("test")
+    for(i=0;i<arr.length;i++){
+    t.insertAdjacentHTML("beforeend",`<li>${arr[i]}<button class="btton">remove</button</li>`)
 }
-let text=document.getElementById("txt")
-let butt=document.getElementById("add")
+    let text=document.getElementById("txt")
+    let butt=document.getElementById("add")
+    console.log(text)
+    var button=document.getElementsByClassName("btton")
+    
+    
+    butt.addEventListener('click',function(){
+            arr.push(text.value)
+            t.insertAdjacentHTML("beforeend",`<li>${text.value}<button class="btton">remove</button</li>`)
+            for(i=0;i<button.length;i++){
+                button[i].addEventListener('click',function(e){
+                    e.preventDefault()
+                    var parent=this.parentElement;
+                    parent.remove();
+                })
+            }
+    })
+    
 
-butt.addEventListener('click',function(){
-    arr.push(text.value)
-        t.insertAdjacentHTML("beforeend",`<li>${arr[arr.length-1]}<button class="re">remove</button></li>`)
-
-        console.log(arr)
-})
-
-
+    for(i=0;i<button.length;i++){
+        button[i].addEventListener('click',function(e){
+            e.preventDefault()
+            var parent=this.parentElement;
+            parent.remove();
+        })
+    }
+    
 
