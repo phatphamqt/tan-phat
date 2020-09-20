@@ -21,12 +21,18 @@ var timesheetData=[
     }
 ]
 
+
 let tab=document.getElementById("tab")
 for(i=0;i<timesheetData.length;i++){
-    tab.insertAdjacentHTML("beforeend",`<tr><td>${timesheetData[i].project}</td>
+    tab.insertAdjacentHTML("beforeend",
+    `<tr>
+    <td>${timesheetData[i].project}</td>
     <td>${timesheetData[i].task}</td>
-    <td>${timesheetData[i].timespent}</td></tr>`)
+    <td>${timesheetData[i].timespent}</td>
+    <td><button class="butt" >X</button></td>
+    </tr>`)
 }
+
 
 console.log(tab)
 let newitem={}
@@ -42,8 +48,22 @@ button.addEventListener('click',function(){
     newitem.timespent=`${tim.value}`
     timesheetData.push(newitem)
     console.log(timesheetData)
-    tab.insertAdjacentHTML("beforeend",`<tr><td>${timesheetData[sheet].project}</td>
+    tab.insertAdjacentHTML("beforeend",
+    `<tr>
+    <td>${timesheetData[sheet].project}</td>
     <td>${timesheetData[sheet].task}</td>
-    <td>${timesheetData[sheet].timespent}</td></tr>`)
+    <td>${timesheetData[sheet].timespent}</td>
+    <td><button class="butt">X</button></td>
+    </tr>`)
 })
+let head=document.getElementById("head")
+head.insertAdjacentHTML("beforeend",` <th>Actions</th>`)
+
+let butt=document.getElementsByClassName("butt")
+let tr=document.getElementsByTagName("tr")
+ 
+
+    
+
+
 

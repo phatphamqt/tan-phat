@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    align-items: center;
+}
+.nav-menu li{
+    display: inline;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.btn-signin{
+    padding: 8px 16px;
+    color: #35CE97;
+    background-color: white;
+    border: 1px solid #35CE97;
+    border-radius: 88px; 
+}
+.title{
+    text-align: center;
+    margin-top: 73px;
+    margin-bottom: 40px;
+}
+.title h1{
+    margin-bottom: 8px;
+}
+/* Css form */
+
+
+.signform{
+    width: 442px;
+    height: 460px;
+    margin: 0 auto;
+    box-shadow: 0px 2px 16px rgba(39,9,9,0.16);
+    border-radius: 16px;
+}
+.signform .form-controls{
+    padding: 40px;
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 24px 0px;
+}
+.form-control label{
+    margin-bottom: 11px;
+}
+.form-control input{
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.btn{
+    width: 100%;
+    background: #35CE97;
+    border-radius: 88px;
+    border: 1px solid #35CE97;
+    padding: 16px 0;
+    color:white;
+}
+.footer{
+    display: flex;
+    background: #4F4F4F;
+    height: 277px;
+    margin-top: 142px;
+    flex-wrap: wrap;
+}
+.about{
+    margin-top: 24px;
+    margin-left: 80px;
+    list-style-type: none;
+}
+.about li a{
+    text-decoration: none;
+    color: #BDBDBD;
+}
+.about li{
+    padding-bottom: 8px;
+}
+.info{
+    margin-top: 24px;
+    margin-left: 83px;
+    list-style-type: none;
+}
+.info li{
+    padding-bottom: 8px;
+}
+.info li a{
+    text-decoration: none;
+    color: #BDBDBD;
+}
+.get{
+    margin-top: 24px;
+    align-items: center;
+    margin-left: 140px;
+    padding-left: 100px;
+}
+.get h1{
+    padding-bottom: 4px;
+}
+.get p{
+    color: #828282;
+    text-align: center;
+}
+.logo{
+    display: flex;
+    margin-left: 170px;
+}
+.logo a{
+    font-size: 25px;
+    padding: 30px;
+    color: #F2F2F2;
+}
+.text{
+    padding-left: 80px;
+    padding-top: 85px;
+}
+
