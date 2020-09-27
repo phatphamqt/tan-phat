@@ -1,0 +1,33 @@
+#clock{
+    display: flex;
+}
+
+.el{
+    width: 30px;
+    margin: 10px;
+}
+
+#clock > p{
+    text-align: center;
+}
+
+#pic{
+    width: 500px;
+    height: 300px;
+    margin: 50px;
+}
+
+#picture{
+    display: flex;
+}
+
+#cat{
+    margin: 50px;
+    height: 100px;
+    
+}
+#dog{
+    margin: 50px;
+    height: 100px;
+}
+
