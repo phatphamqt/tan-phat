@@ -84,34 +84,34 @@
 
 
 //cách sau khi học
-    // console.log(arr)
-    // window.list = document.getElementById("list")
-    // var txt = document.getElementById("txt")
-    // var add = document.getElementById("add")
-    // console.log(list)
+    console.log(arr)
+    window.list = document.getElementById("list")
+    var txt = document.getElementById("txt")
+    var add = document.getElementById("add")
+    console.log(list)
 
-    // for(i=0;i<arr.length;i++){
-    //     window.list.insertAdjacentHTML('beforeend',`<li >${arr[i]}<button class="btton" >remove</button</li>`)
-    // }
+    for(i=0;i<arr.length;i++){
+        window.list.insertAdjacentHTML('beforeend',`<li >${arr[i]}<button class="btton" >remove</button</li>`)
+    }
 
-    // function addIt(){
-    //     console.log(txt.value)
-    //     window.arr.push(txt.value)
-    //     window.list.insertAdjacentHTML('beforeend',`<li >${arr[arr.length-1]}<button class="btton">remove</button</li>`)
-    //     txt.value = ""
-    //     for(i=0;i<window.button.length;i++){
-    //         window.button[i].addEventListener('click',function(e){
-    //             e.target.parentElement.remove();
-    //         })
-    //     }    
-    // }
-    // window.button = document.getElementsByClassName("btton")
-    // console.log(window.button.length)
-    // for(i=0;i<window.button.length;i++){
-    //     window.button[i].addEventListener('click',function(e){
-    //         e.target.parentElement.remove();
-    //     })
-    // }    
+    function addIt(){
+        console.log(txt.value)
+        window.arr.push(txt.value)
+        window.list.insertAdjacentHTML('beforeend',`<li >${arr[arr.length-1]}<button class="btton">remove</button</li>`)
+        txt.value = ""
+        for(i=0;i<window.button.length;i++){
+            window.button[i].addEventListener('click',function(e){
+                e.target.parentElement.remove();
+            })
+        }    
+    }
+    window.button = document.getElementsByClassName("btton")
+    console.log(window.button.length)
+    for(i=0;i<window.button.length;i++){
+        window.button[i].addEventListener('click',function(e){
+            e.target.parentElement.remove();
+        })
+    }    
 
     
 
