@@ -34,7 +34,7 @@ async function getData(){
     const data = await response.json()
     console.log(data)
     console.log(createMembers(data))
-    // member.insertAdjacentHTML('beforeend',createMembers(data).join(""))
+    member.insertAdjacentHTML('beforeend',createMembers(data).join(""))
 }
 
 getData()

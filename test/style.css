@@ -1,0 +1,54 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #1a82f7;
+    background: -moz-linear-gradient(left, #c6bfe0 30%, #dad8a2 70%);
+    background: -o-linear-gradient(left,#c6bfe0 30%, #dad8a2 70%);
+    background: -ms-linear-gradient(left, #c6bfe0 30%,#dad8a2 70%);
+    background: -webkit-gradient(linear,left top,right top,color-stop(0.3, #c6bfe0),color-stop(0.7, #dad8a2));
+}
+#head{
+    text-align: center;
+    
+}
+
+.pokemon{
+    margin-left: 20px;
+    border: 1px ;
+    border-radius: 16px;
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0px 2px 16px rgba(39,9,9,0.16);
+    margin-bottom: 20px;
+}
+
+.pokemon > .img-container > img{
+    position: relative;
+    z-index: 1;
+    margin-top: 5px;
+    height: auto; 
+    width: auto; 
+    max-width: 100px; 
+    max-height: 100px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 16px rgba(39,9,9,0.16);
+}
+
+.pokemon .info .name{
+    margin-bottom: 0px;
+}
+.pokemon .info .skill{
+    margin: 0px;
+}
+
+#pokemons{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-right: 50px;   
+}
